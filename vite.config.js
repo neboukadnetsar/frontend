@@ -13,10 +13,8 @@ export default defineConfig({
     }
   },
   server: {
-    host: 'https://rodrigo-12jp.onrender.com',
-    // https: true,
     proxy: {
-      '/': 'https://rodrigo-12jp.onrender.com',
+      '/': 'https://rodrigo-12jp.onrender.com/recettes',
       '/api': {
         target: 'https://rodrigo-12jp.onrender.com',
         changeOrigin: true,
