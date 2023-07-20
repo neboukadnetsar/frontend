@@ -2,12 +2,9 @@
   "name": "rodrigo_cuisine-frontend",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://neboukadnetsar.github.io/frontend/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
