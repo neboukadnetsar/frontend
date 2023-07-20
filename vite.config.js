@@ -16,6 +16,8 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://rodrigo-12jp.onrender.com',
+        changeOrigin: true,
+        secure: false,
         rewrite: (path) => path.replace(/^\/api/, ''),
       }
     }
