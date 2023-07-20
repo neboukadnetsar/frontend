@@ -13,7 +13,10 @@ export default defineConfig({
     }
   },
   server: {
+    host: 'https://rodrigo-12jp.onrender.com',
+    // https: true,
     proxy: {
+      '/': 'https://rodrigo-12jp.onrender.com',
       '/api': {
         target: 'https://rodrigo-12jp.onrender.com',
         changeOrigin: true,
